@@ -3,9 +3,15 @@
 namespace Conner\Likeable;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
+use Alsofronie\Uuid\UuidModelTrait;
 
 class LikeCounter extends Eloquent
 {
+	/**
+     * Use Uuuid 32 as primary key
+     */
+    use UuidModelTrait;
+    
 	protected $table = 'likeable_like_counters';
 	public $timestamps = false;
 	protected $fillable = ['likeable_id', 'likeable_type', 'count'];
