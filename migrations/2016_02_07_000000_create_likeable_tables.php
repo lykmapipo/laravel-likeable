@@ -15,6 +15,7 @@ class CreateLikeableTables extends Migration
 			$table->timestamps();
 			$table->primary('id');
 			$table->unique(['likeable_id', 'likeable_type', 'user_id'], 'likeable_likes_unique');
+            $table->foreign('user_id')->references('id')->on('users');
 		});
 		
 		Schema::create('likeable_like_counters', function(Blueprint $table) {
