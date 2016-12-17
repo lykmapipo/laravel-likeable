@@ -14,7 +14,7 @@
 		"php": ">=5.5.0",
 		"illuminate/database": ">=5.0",
 		"illuminate/support": ">=5.0",
-		"alsofronie/eloquent-uuid": "^1.0"
+		"alsofronie/eloquent-uuid": "dev-master"
 	},
 	"require-dev": {
 		"orchestra/testbench": "~3.0",
